@@ -7,6 +7,7 @@
     <groupId>org.xgileIt.schools</groupId>
     <artifactId>schoolsmgmt</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
 
     <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
     <dependencies>
@@ -16,4 +17,23 @@
             <version>5.1.6</version>
         </dependency>
     </dependencies>
+ <build>
+     <plugins>
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.2.3</version>
+     <!--   <configuration>
+            <attachClasses>true</attachClasses>
+            <webXml>target/web.xml</webXml>
+            <webResources>
+                <resource>
+                    <directory>src/main/webapp</directory>
+                    <filtering>true</filtering>
+                </resource>
+            </webResources>
+        </configuration>-->     
+    </plugin>
+     </plugins>
+ </build>
 </project>
