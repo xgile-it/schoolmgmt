@@ -1,0 +1,15 @@
+//create table student
+
+create database schoolmgmt;
+use schoolmgmt;
+
+create table students
+(
+studentNumber int(10) primary key,
+fname varchar(40) null,
+lname varchar(20),
+dob date,
+grade varchar(5),
+address varchar(300),
+parentsContacts varchar(20)
+);
