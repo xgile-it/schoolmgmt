@@ -4,6 +4,25 @@
 <html>
 <head>
 	<title>User Management Application</title>
+
+	<style>
+
+	th{
+        background:blue;
+	    color:red;
+	}
+	h2{
+
+	 color :blue;
+	}
+
+	td{
+
+	background:blue;
+	}
+
+
+	</style>
 </head>
 <body>
 	<center>
@@ -45,7 +64,7 @@
                 </td>
             </tr>
             <tr>
-                <th>User Email: </th>
+                <th>Last name: </th>
                 <td>
                 	<input type="text" name="email" size="45"
                 			value="<c:out value='${students.lname}' />"
@@ -53,7 +72,7 @@
                 </td>
             </tr>
             <tr>
-                <th>Country: </th>
+                <th>Date Of Birth: </th>
                 <td>
                 	<input type="text" name="country" size="15"
                 			value="<c:out value='${students.dob}' />"
@@ -62,7 +81,7 @@
             </tr>
 
               <tr>
-                            <th>Country: </th>
+                            <th>Student Grade: </th>
                             <td>
                             	<input type="text" name="country" size="15"
                             			value="<c:out value='${students.grade}' />"
@@ -71,7 +90,7 @@
                         </tr>
 
                           <tr>
-                                        <th>Country: </th>
+                                        <th>Address: </th>
                                         <td>
                                         	<input type="text" name="country" size="15"
                                         			value="<c:out value='${students.address}' />"
@@ -81,7 +100,7 @@
 
 
                                       <tr>
-                                                    <th>Country: </th>
+                                                    <th>Parent Contact: </th>
                                                     <td>
                                                     	<input type="text" name="country" size="15"
                                                     			value="<c:out value='${students.parentContacts}' />"

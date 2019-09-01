@@ -8,9 +8,6 @@ public class Students {
     private String dob;
     private String grade;
     private String address;
-
-
-
     private String parentContacts;
 
       public Students() {}

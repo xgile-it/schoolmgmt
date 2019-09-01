@@ -24,15 +24,15 @@ public class DbUtil {
         try {
             PreparedStatement statement = connection.prepareStatement(query);
             //Date date = new Date();
-            String str="2018-03-31";
+            String str="1995-06-11";
             Date date=Date.valueOf(str);
-            statement.setInt(1,12345);
-            statement.setString(2, "Evaan");
-            statement.setString(3, "Singh");
+            statement.setInt(1,777777);
+            statement.setString(2, "Delisiwe");
+            statement.setString(3, "Thabethe");
             statement.setDate(4, date);
-            statement.setString(5, "G2");
-            statement.setString(6, "Randburg");
-            statement.setString(7, "0744828778");
+            statement.setString(5, "G1");
+            statement.setString(6, "midrand");
+            statement.setString(7, "0728234236");
 
             int rowsInserted = statement.executeUpdate();
             if (rowsInserted > 0) {
